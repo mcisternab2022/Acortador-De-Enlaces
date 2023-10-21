@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/015/152/952/original/url-icon-design-for-web-interfaces-and-applications-png.png" type="image/x-icon">
+  <title>Acortador de enlaces | Marcos Cisterna</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <i class="bx bx-link-alt"></i>
+
+    <h1>Acortador de URL</h1>
+    <label for="originalURL">Ingrese la URL que desea acortar:</label>
+    <input type="text" id="originalURL" placeholder="https://ejemplo.com">
+
+    <div class="buttons">
+      <button id="reload-btn">Recargar</button>
+      <button id="short-btn">Acortar</button>
+
+    </div>
+
+    
+    <label for="shortenedURL">URL acortada:</label>
+    <textarea id="shortenedURL" rows="3" readonly onclick="copiarTexto()" title="Copiar"></textarea>
+    <p id="mensaje" style="display: none;">¡Texto copiado!</p>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
